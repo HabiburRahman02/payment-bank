@@ -36,11 +36,11 @@
                     </div>
                     <div class="divider"></div>
 
-                    <!-- check -->
-                    <form class="card-body w-full">
+                    <!-- add money -->
+                    <form class="hidden card-body w-full">
                         <div class="form-control">
                             <label class="label">
-                                <span class="label-text">Amount</span>
+                                <span class="label-text">Amount Add Money</span>
                             </label>
                             <input id="field-new-amount" type="number" placeholder="Enter amount"
                                 class="input input-bordered" required />
@@ -56,12 +56,34 @@
                             <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                         </div>
                     </form>
+
+                    <!-- cash out -->
+                    <form class="card-body w-full">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Amount Cash Out</span>
+                            </label>
+                            <input id="field-cash-out-amount" type="number" placeholder="Enter amount"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Pin</span>
+                            </label>
+                            <input id="field-cash-out-pin" type="text" placeholder="Type 1234"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
         </div>
     </div>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 
 </html>
