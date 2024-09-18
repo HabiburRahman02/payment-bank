@@ -20,7 +20,7 @@
                     <div class="flex justify-center">
                         <div class="stats shadow rounded-lg bg-teal-500 text-white">
                             <div class="stat ">
-                                <div class="stat-value">89,400</div>
+                                <div class="stat-value">$<span id="prev-balance">200</span></div>
                                 <div class="stat-desc text-white text-2xl">Available Balance</div>
                             </div>
                         </div>
@@ -42,16 +42,18 @@
                             <label class="label">
                                 <span class="label-text">Amount</span>
                             </label>
-                            <input type="number" placeholder="Enter amount" class="input input-bordered" required />
+                            <input id="field-new-amount" type="number" placeholder="Enter amount"
+                                class="input input-bordered" required />
                         </div>
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text">Pin</span>
                             </label>
-                            <input type="text" placeholder="Enter pin" class="input input-bordered" required />
+                            <input id="field-pin-number" type="text" placeholder="Type 1234"
+                                class="input input-bordered" required />
                         </div>
                         <div class="form-control mt-6">
-                            <button class="btn btn-primary">Login</button>
+                            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                         </div>
                     </form>
                 </div>
@@ -59,6 +61,7 @@
             </div>
         </div>
     </div>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
