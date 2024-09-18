@@ -15,23 +15,24 @@
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-                <div class="artboard artboard-demo phone-1">
+                <div class="artboard artboard-demo phone-1 bg-gray-50">
                     <div class="w-full">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Phone Number</span>
+                                    <span class="label-text font-bold">Phone Number</span>
                                 </label>
-                                <input type="number" placeholder="Enter number" class="input input-bordered" required />
+                                <input id="phone" type="number" placeholder="Enter number" class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Pin 4 Digits</span>
+                                    <span class="label-text font-bold">Pin 4 Digits</span>
                                 </label>
-                                <input type="text" placeholder="Enter 4 digits pin" class="input input-bordered" required />
+                                <input id="pin" type="text" placeholder="Enter 4 digits pin" class="input input-bordered"
+                                    required />
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                                <button id="btn-login" class="btn btn-primary">Login</button>
                             </div>
                         </form>
                     </div>
@@ -39,6 +40,7 @@
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
